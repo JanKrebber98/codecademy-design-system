@@ -17,12 +17,12 @@ Entwickler:innen eine gemeinsame Referenz haben.
 | [Textstile](textstile.html) | Hauptüberschrift, Zwischenüberschrift, Unterüberschrift, Fließtext, Link, Zitat, Bildunterschrift |
 | [Abstände](abstaende.html) | Abstandsskala und Breakpoints |
 | [Ecken & Schatten](formen.html) | Eckenradien und Schattenstufen |
-| [Komponenten](komponenten.html) | Buttons, Formularfelder, Hinweisboxen, Badges und Karte |
+| [Komponenten](komponenten.html) | Buttons, Formularfelder, Hinweisboxen, Badges, Karte und Breadcrumb |
 
 ## Umgesetzt
 
 - Pflichtteile der Aufgabe: Farben, Schriften und Textstile
-- Erweiterungen: zusätzliche Komponenten, eigene Seite pro Bereich mit Navigation, responsives Layout für Tablet und Handy
+- Erweiterungen: zusätzliche Komponenten, eigene Seite pro Bereich mit Navigation und Breadcrumb, responsives Layout für Tablet und Handy
 - Alle Werte als CSS-Variablen in [`styles.css`](styles.css) (Farben, Schriften, Abstände, Radien, Schatten)
 
 ## Verwendete Technik

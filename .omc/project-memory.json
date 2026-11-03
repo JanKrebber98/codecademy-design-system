@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1793696746508,
+  "projectRoot": "c:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {},
+  "hotPaths": [
+    {
+      "path": "komponenten.html",
+      "accessCount": 1.999913432552439,
+      "lastAccessed": 1793697042201,
+      "type": "file"
+    },
+    {
+      "path": "styles.css",
+      "accessCount": 1,
+      "lastAccessed": 1793697043292,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1.9999908623723195,
+      "lastAccessed": 1793697045539,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

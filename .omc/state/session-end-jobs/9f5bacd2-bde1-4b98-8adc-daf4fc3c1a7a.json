@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "jobId": "134f1f12-9829-4a26-9ecb-f5b15746d217",
+  "sessionId": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+  "scopeKey": "baa8d58e1a739093950c75191badb98a2d7c5b4e90aee1ef3830c4e0cab6db64",
+  "revision": 73,
+  "createdAt": "2026-11-03T09:05:33.422Z",
+  "updatedAt": "2026-11-03T09:06:07.310Z",
+  "producerGraceExpiresAt": "2026-11-03T09:06:03.423Z",
+  "bestEffortDeadlineAt": "2026-11-03T09:06:56.423Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "0f2305dd54720a6e8bd3eb5384c577fc8584cb3b76a91262041bd12521d71dfa",
+      "payloadDigest": "0f2305dd54720a6e8bd3eb5384c577fc8584cb3b76a91262041bd12521d71dfa",
+      "sealedAt": "2026-11-03T09:06:04.518Z",
+      "sealedBy": "recovery"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-11-03T09:05:33.442Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "c9f18ac764f92bc47333f044655bf9ea268d078648648c63d566a5cc43f567c5",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "ended_at": "2026-11-03T09:06:04.019Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-11-03T09:06:03.680Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "976a18c0-1541-4044-b59e-f3d021d9f379",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:04.510Z"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "a4e8b8cb41168b8f20d4e83a689560404a2c102600418a5a1b7b734fa27ef7de",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-11-03T09:05:33.442Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "e492e68d98ca6de04999152e5f2cd3b6d9778b4afa7127d7ecc433e3fd96da14",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "ended_at": "2026-11-03T09:06:04.019Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-11-03T09:06:04.549Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "dee3ec2c-59a5-4376-9cfd-0eb1025c9ebd",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:04.937Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "0b1848fe216c95d8f9c4724ebd096f59e69a39bd32402f261e0c6b826519269b",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "ended_at": "2026-11-03T09:06:04.019Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-11-03T09:06:04.956Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "c2b3f656-a9a6-4b74-8198-271d4ff5c3be",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:05.361Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "12ce6ebccc6e2e1d5dd29921c8b51145b8dc98cf286120cda0d1397ea7136e6f",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-11-03T09:06:05.384Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "0fadf49f-a842-4547-bc63-27dcad1941ff",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:05.766Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "2d2c5076f3165fb9b2918e2f715c075ea0e23a085627b759860c0dd8cb7d466b",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "ended_at": "2026-11-03T09:06:04.019Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-11-03T09:06:05.786Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "ca8e6e43-8b48-483e-9ac1-236312538220",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:06.133Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "6231c2517fe39dcd9d172c410ad6c9fb06eb6240ba50250dabb5b66eaa5cda17",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "ended_at": "2026-11-03T09:06:04.019Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-11-03T09:06:06.152Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "92eb3c8e-a94f-4418-be32-c317ee5dc889",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:06.514Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "257542605392ca950634029bacad42616aad0389d9c015608d197b755edb6591",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {},
+        "metrics": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "ended_at": "2026-11-03T09:06:04.019Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        }
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-11-03T09:06:06.534Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "181a7cb3-e7ab-4be0-a3f8-7433ee498573",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:06.896Z"
+    },
+    "spawn-next": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "a4bd81ea9126cfe968bd0e4fa471453ea5fc95235c8c545022187c2c9123016f",
+      "payload": {
+        "transcriptPath": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+        "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+        "reason": "other",
+        "input": {
+          "session_id": "9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a",
+          "transcript_path": "C:\\Users\\krebb\\.claude\\projects\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a.jsonl",
+          "cwd": "C:\\Users\\krebb\\dev\\codeacademy\\Website Design System",
+          "scratchpad_dir": "C:\\Users\\krebb\\AppData\\Local\\Temp\\claude\\c--Users-krebb-dev-codeacademy-Website-Design-System\\9f5bacd2-bde1-4b98-8adc-daf4fc3c1a7a\\scratchpad",
+          "prompt_id": "131a3812-5178-4f8a-8dce-9e23dbeb1f22",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "initialTeamNames": [],
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-11-03T09:06:06.916Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "f03b70af-21ef-40b2-b614-dafc27c249e0",
+        "phase": "terminal",
+        "deadlineAt": "2026-11-03T09:06:13.427Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-11-03T09:06:07.275Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "recoverableFailure": {
+    "reason": "actions-settled",
+    "releasedAt": "2026-11-03T09:06:07.294Z",
+    "ownerNonce": "03fa4c68-cf92-4a25-8b32-7cff61923eac"
+  },
+  "completion": {
+    "completedAt": "2026-11-03T09:06:07.294Z",
+    "terminalDigest": "c98545bf218815b698d36a9241c4dae7a03c02c994e0f7956ed8067add5be74e",
+    "terminalRevision": 72
+  }
+}

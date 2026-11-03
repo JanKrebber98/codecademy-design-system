@@ -31,6 +31,13 @@
     </nav>
 
     <main>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Übersicht</a></li>
+          <li><span aria-current="page">Komponenten</span></li>
+        </ol>
+      </nav>
+
       <section id="komponenten" class="section">
         <h2>Komponenten</h2>
         <p class="section-intro">
@@ -268,6 +275,40 @@ box-shadow: 0 2px 8px rgba(27, 31, 59, 0.15);
 
 /* Inhalt */
 padding: 24px;</code></pre>
+        </div>
+
+        <h3 class="subsection-title" id="breadcrumb">Breadcrumb</h3>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Pfadnavigation · &lt;nav&gt; + &lt;ol&gt;</span>
+            <nav class="breadcrumb breadcrumb-demo" aria-label="Breadcrumb (Beispiel)">
+              <ol>
+                <li><a href="index.html">Übersicht</a></li>
+                <li><a href="komponenten.html">Komponenten</a></li>
+                <li><span aria-current="page">Breadcrumb</span></li>
+              </ol>
+            </nav>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>display: flex;
+flex-wrap: wrap;
+gap: 8px;
+font-size: 0.9rem;
+list-style: none;
+
+/* Trennzeichen zwischen den Einträgen */
+content: "›";
+color: hsl(220, 10%, 45%);
+
+/* Links */
+color: #1B1F3B;
+text-decoration: underline;
+
+/* aktuelle Seite */
+font-weight: 600;
+color: hsl(220, 10%, 45%);</code></pre>
         </div>
       </section>
     </main>

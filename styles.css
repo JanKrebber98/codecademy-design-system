@@ -142,6 +142,46 @@ code {
   box-shadow: inset 0 -3px 0 var(--korallenglut);
 }
 
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+  margin-bottom: var(--abstand-m);
+  font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--abstand-s);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li + li::before {
+  content: "›";
+  margin-right: var(--abstand-s);
+  color: var(--schiefergrau);
+}
+
+.breadcrumb a {
+  color: var(--mitternachtstinte);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.breadcrumb a:hover {
+  color: var(--korallenglut);
+}
+
+.breadcrumb [aria-current="page"] {
+  font-weight: 600;
+  color: var(--schiefergrau);
+}
+
+.breadcrumb-demo {
+  margin: var(--abstand-s) 0 0;
+}
+
 /* ===== Seitenlayout ===== */
 main {
   max-width: 1100px;
