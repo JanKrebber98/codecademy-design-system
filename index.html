@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Übersicht</a>
+      <a href="farben.html">Farben</a>
+      <a href="schriften.html">Schriften</a>
+      <a href="textstile.html">Textstile</a>
+      <a href="abstaende.html">Abstände</a>
+      <a href="formen.html">Ecken &amp; Schatten</a>
+      <a href="komponenten.html">Komponenten</a>
+    </nav>
+
+    <main>
+      <section class="section">
+        <h2>Übersicht</h2>
+        <p class="section-intro">
+          Dieses Design System sammelt alle Farben, Schriften und Bausteine
+          der Website an einem Ort. Wähle einen Bereich aus.
+        </p>
+
+        <div class="overview-grid">
+          <a class="overview-card" href="farben.html">
+            <div class="overview-preview">
+              <span class="dot mitternachtstinte"></span>
+              <span class="dot korallenglut"></span>
+              <span class="dot meeresnebel"></span>
+              <span class="dot sonnenstrahl"></span>
+              <span class="dot rubinrot"></span>
+            </div>
+            <h3>Farben</h3>
+            <p>Die Farbpalette mit Namen, CSS-Werten und Verwendung.</p>
+          </a>
+
+          <a class="overview-card" href="schriften.html">
+            <div class="overview-preview">
+              <span class="preview-glyph playfair">Aa</span>
+            </div>
+            <h3>Schriften</h3>
+            <p>Playfair Display, Source Sans 3 und JetBrains Mono.</p>
+          </a>
+
+          <a class="overview-card" href="textstile.html">
+            <div class="overview-preview">
+              <span class="preview-glyph playfair bold">H1</span>
+            </div>
+            <h3>Textstile</h3>
+            <p>Überschriften, Fließtext, Links, Zitate und mehr.</p>
+          </a>
+
+          <a class="overview-card" href="abstaende.html">
+            <div class="overview-preview preview-bars">
+              <span class="spacing-bar" style="width: 16px"></span>
+              <span class="spacing-bar" style="width: 32px"></span>
+              <span class="spacing-bar" style="width: 48px"></span>
+            </div>
+            <h3>Abstände</h3>
+            <p>Die Abstandsskala und die Breakpoints für Handy und Tablet.</p>
+          </a>
+
+          <a class="overview-card" href="formen.html">
+            <div class="overview-preview">
+              <span class="preview-shape"></span>
+            </div>
+            <h3>Ecken &amp; Schatten</h3>
+            <p>Eckenradien und Schattenstufen für Karten und Buttons.</p>
+          </a>
+
+          <a class="overview-card" href="komponenten.html">
+            <div class="overview-preview">
+              <span class="btn btn-primaer">Button</span>
+            </div>
+            <h3>Komponenten</h3>
+            <p>Buttons, Formularfelder, Hinweisboxen, Badges und Karten.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>

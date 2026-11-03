@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farben · Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html">Übersicht</a>
+      <a href="farben.html" aria-current="page">Farben</a>
+      <a href="schriften.html">Schriften</a>
+      <a href="textstile.html">Textstile</a>
+      <a href="abstaende.html">Abstände</a>
+      <a href="formen.html">Ecken &amp; Schatten</a>
+      <a href="komponenten.html">Komponenten</a>
+    </nav>
+
+    <main>
+      <section id="farben" class="section">
+        <h2>Farben</h2>
+
+        <div class="color-grid">
+          <div class="color-card">
+            <div class="color-swatch mitternachtstinte"></div>
+            <div class="color-info">
+              <h3>Mitternachtstinte</h3>
+              <code>#1B1F3B</code>
+              <p>
+                Haupttextfarbe und dunkle Hintergründe wie Header und Footer.
+              </p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch korallenglut"></div>
+            <div class="color-info">
+              <h3>Korallenglut</h3>
+              <code>#FF6B5B</code>
+              <p>
+                Hauptakzentfarbe für Buttons, Links und Handlungsaufforderungen.
+              </p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch meeresnebel"></div>
+            <div class="color-info">
+              <h3>Meeresnebel</h3>
+              <code>rgb(127, 200, 184)</code>
+              <p>Zweite Akzentfarbe für Tags, Badges und Erfolgsmeldungen.</p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch sonnenstrahl"></div>
+            <div class="color-info">
+              <h3>Sonnenstrahl</h3>
+              <code>hsl(42, 100%, 62%)</code>
+              <p>
+                Hervorhebungen und wichtige Hinweise, die ins Auge fallen
+                sollen.
+              </p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch sandduene"></div>
+            <div class="color-info">
+              <h3>Sanddüne</h3>
+              <code>#F4E9D8</code>
+              <p>Seitenhintergrund für einen warmen, ruhigen Eindruck.</p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch schiefergrau"></div>
+            <div class="color-info">
+              <h3>Schiefergrau</h3>
+              <code>hsl(220, 10%, 45%)</code>
+              <p>
+                Nebentext wie Bildunterschriften, Datumsangaben und Hinweise.
+              </p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch sanfter-schatten"></div>
+            <div class="color-info">
+              <h3>Sanfter Schatten</h3>
+              <code>rgba(27, 31, 59, 0.15)</code>
+              <p>Rahmen, Trennlinien und Schatten.</p>
+            </div>
+          </div>
+
+          <div class="color-card">
+            <div class="color-swatch rubinrot"></div>
+            <div class="color-info">
+              <h3>Rubinrot</h3>
+              <code>hsla(355, 75%, 45%, 1)</code>
+              <p>Fehlermeldungen und Aktionen, die etwas löschen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>

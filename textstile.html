@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textstile · Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html">Übersicht</a>
+      <a href="farben.html">Farben</a>
+      <a href="schriften.html">Schriften</a>
+      <a href="textstile.html" aria-current="page">Textstile</a>
+      <a href="abstaende.html">Abstände</a>
+      <a href="formen.html">Ecken &amp; Schatten</a>
+      <a href="komponenten.html">Komponenten</a>
+    </nav>
+
+    <main>
+      <section id="textstile" class="section">
+        <h2>Textstile</h2>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Hauptüberschrift · &lt;h1&gt;</span>
+            <h1 class="ts-hauptueberschrift">Willkommen auf der Website</h1>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Playfair Display', serif;
+font-size: 3rem;
+font-weight: 700;
+line-height: 1.1;
+letter-spacing: -0.5px;
+color: #1B1F3B;
+
+/* Tablet & Handy (bis 700px) */
+font-size: 2.25rem;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Zwischenüberschrift · &lt;h2&gt;</span>
+            <h2 class="ts-zwischenueberschrift">Unsere Leistungen</h2>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Playfair Display', serif;
+font-size: 2rem;
+font-weight: 700;
+line-height: 1.2;
+color: #1B1F3B;
+
+/* Tablet & Handy (bis 700px) */
+font-size: 1.75rem;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Unterüberschrift · &lt;h3&gt;</span>
+            <h3 class="ts-unterueberschrift">Neu im Sortiment</h3>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Source Sans 3', sans-serif;
+font-size: 1.25rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #FF6B5B;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Fließtext · &lt;p&gt;</span>
+            <p class="ts-fliesstext">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+              Dieser Stil wird für alle längeren Texte auf der Website
+              verwendet.
+            </p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Source Sans 3', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.6;
+color: #1B1F3B;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Link · &lt;a&gt;</span>
+            <p><a class="ts-link" href="#textstile">Mehr erfahren</a></p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Source Sans 3', sans-serif;
+font-size: 1rem;
+font-weight: 600;
+color: #FF6B5B;
+text-decoration: underline;
+text-underline-offset: 3px;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Zitat · &lt;blockquote&gt;</span>
+            <blockquote class="ts-zitat">
+              „Gutes Design ist so wenig Design wie möglich.“
+            </blockquote>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Playfair Display', serif;
+font-size: 1.25rem;
+font-style: italic;
+font-weight: 400;
+padding-left: 16px;
+border-left: 4px solid hsl(42, 100%, 62%);</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label"
+              >Bildunterschrift · &lt;figcaption&gt;</span
+            >
+            <figure class="ts-figure">
+              <figcaption class="ts-bildunterschrift">
+                Abbildung 1: Blick über die Dächer der Altstadt.
+              </figcaption>
+            </figure>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>font-family: 'Source Sans 3', sans-serif;
+font-size: 0.875rem;
+font-weight: 300;
+color: hsl(220, 10%, 45%);</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>

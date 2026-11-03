@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecken &amp; Schatten · Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html">Übersicht</a>
+      <a href="farben.html">Farben</a>
+      <a href="schriften.html">Schriften</a>
+      <a href="textstile.html">Textstile</a>
+      <a href="abstaende.html">Abstände</a>
+      <a href="formen.html" aria-current="page">Ecken &amp; Schatten</a>
+      <a href="komponenten.html">Komponenten</a>
+    </nav>
+
+    <main>
+      <section id="formen" class="section">
+        <h2>Ecken &amp; Schatten</h2>
+
+        <h3 class="subsection-title">Eckenradius</h3>
+        <div class="shape-grid">
+          <div class="shape-tile radius-s">
+            <span>Klein</span>
+            <code>border-radius: 4px;</code>
+          </div>
+          <div class="shape-tile radius-m">
+            <span>Mittel</span>
+            <code>border-radius: 8px;</code>
+          </div>
+          <div class="shape-tile radius-l">
+            <span>Groß</span>
+            <code>border-radius: 16px;</code>
+          </div>
+          <div class="shape-tile radius-rund">
+            <span>Rund</span>
+            <code>border-radius: 999px;</code>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Schatten</h3>
+        <div class="shape-grid">
+          <div class="shape-tile schatten-s">
+            <span>Flach</span>
+            <code>box-shadow: 0 1px 3px rgba(27, 31, 59, 0.15);</code>
+          </div>
+          <div class="shape-tile schatten-m">
+            <span>Mittel</span>
+            <code>box-shadow: 0 2px 8px rgba(27, 31, 59, 0.15);</code>
+          </div>
+          <div class="shape-tile schatten-l">
+            <span>Hoch</span>
+            <code>box-shadow: 0 8px 24px rgba(27, 31, 59, 0.2);</code>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>

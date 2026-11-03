@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abstände · Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html">Übersicht</a>
+      <a href="farben.html">Farben</a>
+      <a href="schriften.html">Schriften</a>
+      <a href="textstile.html">Textstile</a>
+      <a href="abstaende.html" aria-current="page">Abstände</a>
+      <a href="formen.html">Ecken &amp; Schatten</a>
+      <a href="komponenten.html">Komponenten</a>
+    </nav>
+
+    <main>
+      <section id="abstaende" class="section">
+        <h2>Abstände</h2>
+        <p class="section-intro">
+          Alle Innen- und Außenabstände stammen aus dieser Skala. So wirkt jede
+          Seite gleichmäßig.
+        </p>
+
+        <div class="demo-card spacing-list">
+          <div class="spacing-row">
+            <code>--abstand-xs · 4px</code>
+            <div class="spacing-bar" style="width: 4px"></div>
+          </div>
+          <div class="spacing-row">
+            <code>--abstand-s · 8px</code>
+            <div class="spacing-bar" style="width: 8px"></div>
+          </div>
+          <div class="spacing-row">
+            <code>--abstand-m · 16px</code>
+            <div class="spacing-bar" style="width: 16px"></div>
+          </div>
+          <div class="spacing-row">
+            <code>--abstand-l · 24px</code>
+            <div class="spacing-bar" style="width: 24px"></div>
+          </div>
+          <div class="spacing-row">
+            <code>--abstand-xl · 32px</code>
+            <div class="spacing-bar" style="width: 32px"></div>
+          </div>
+          <div class="spacing-row">
+            <code>--abstand-xxl · 48px</code>
+            <div class="spacing-bar" style="width: 48px"></div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Breakpoints</h3>
+        <p class="section-intro">
+          Ab diesen Bildschirmbreiten passt sich das Layout an. Die Regeln
+          stehen in <code>@media</code>-Abfragen am Ende von
+          <code>styles.css</code>.
+        </p>
+
+        <div class="breakpoint-list">
+          <div class="breakpoint-card">
+            <span class="breakpoint-name">Desktop</span>
+            <code>ab 701px</code>
+            <p>Volles Layout: Beispiel und Regeln stehen nebeneinander.</p>
+          </div>
+          <div class="breakpoint-card">
+            <span class="breakpoint-name">Tablet</span>
+            <code>@media (max-width: 700px)</code>
+            <p>
+              Beispiel und Regeln stehen untereinander, Überschriften werden
+              kleiner.
+            </p>
+          </div>
+          <div class="breakpoint-card">
+            <span class="breakpoint-name">Handy</span>
+            <code>@media (max-width: 480px)</code>
+            <p>
+              Weniger Innenabstand, schmalere Raster und kompakte Navigation.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>

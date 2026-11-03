@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schriften · Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html">Übersicht</a>
+      <a href="farben.html">Farben</a>
+      <a href="schriften.html" aria-current="page">Schriften</a>
+      <a href="textstile.html">Textstile</a>
+      <a href="abstaende.html">Abstände</a>
+      <a href="formen.html">Ecken &amp; Schatten</a>
+      <a href="komponenten.html">Komponenten</a>
+    </nav>
+
+    <main>
+      <section id="schriften" class="section">
+        <h2>Schriften</h2>
+
+        <div class="font-card">
+          <h3 class="font-name playfair">Playfair Display</h3>
+          <p class="font-usage">Für Überschriften und Titel.</p>
+
+          <div class="font-style">
+            <span class="style-label">Normal · 400 · 2rem</span>
+            <p class="playfair sample-large">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Fett · 700 · 2rem</span>
+            <p class="playfair sample-large bold">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Kursiv · 400 · 1.5rem</span>
+            <p class="playfair sample-medium italic">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+        </div>
+
+        <div class="font-card">
+          <h3 class="font-name source-sans">Source Sans 3</h3>
+          <p class="font-usage">
+            Für Fließtext, Navigation, Buttons und Formulare.
+          </p>
+
+          <div class="font-style">
+            <span class="style-label">Normal · 400 · 1rem</span>
+            <p class="source-sans">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Leicht · 300 · 1rem</span>
+            <p class="source-sans light">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Halbfett · 600 · 1rem</span>
+            <p class="source-sans semibold">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Fett · 700 · 1rem</span>
+            <p class="source-sans bold">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Kursiv · 400 · 1rem</span>
+            <p class="source-sans italic">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Unterstrichen · 600 · 1rem</span>
+            <p class="source-sans semibold underline">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+        </div>
+
+        <div class="font-card">
+          <h3 class="font-name mono">JetBrains Mono</h3>
+          <p class="font-usage">Für Code-Beispiele und CSS-Werte.</p>
+
+          <div class="font-style">
+            <span class="style-label">Normal · 400 · 0.95rem</span>
+            <p class="mono">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+          <div class="font-style">
+            <span class="style-label">Fett · 700 · 0.95rem</span>
+            <p class="mono bold">
+              Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>

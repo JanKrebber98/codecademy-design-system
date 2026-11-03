@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komponenten · Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="index.html">Design System</a></h1>
+      <p>
+        Das visuelle Vokabular und die wiederverwendbaren Stile dieser Website.
+      </p>
+    </header>
+
+    <nav class="site-nav">
+      <a href="index.html">Übersicht</a>
+      <a href="farben.html">Farben</a>
+      <a href="schriften.html">Schriften</a>
+      <a href="textstile.html">Textstile</a>
+      <a href="abstaende.html">Abstände</a>
+      <a href="formen.html">Ecken &amp; Schatten</a>
+      <a href="komponenten.html" aria-current="page">Komponenten</a>
+    </nav>
+
+    <main>
+      <section id="komponenten" class="section">
+        <h2>Komponenten</h2>
+        <p class="section-intro">
+          Wiederverwendbare Bausteine, die aus den Farben, Schriften und
+          Abständen dieses Design Systems zusammengesetzt sind.
+        </p>
+
+        <h3 class="subsection-title" id="buttons">Buttons</h3>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Primär</span>
+            <p><button class="btn btn-primaer">Jetzt starten</button></p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 12px 24px;
+font-weight: 600;
+border-radius: 8px;
+background-color: #FF6B5B;
+color: #1B1F3B;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Sekundär</span>
+            <p><button class="btn btn-sekundaer">Mehr ansehen</button></p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 12px 24px;
+font-weight: 600;
+border-radius: 8px;
+background-color: rgb(127, 200, 184);
+color: #1B1F3B;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Umriss</span>
+            <p><button class="btn btn-umriss">Abbrechen</button></p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 12px 24px;
+font-weight: 600;
+border: 2px solid #1B1F3B;
+border-radius: 8px;
+background-color: transparent;
+color: #1B1F3B;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Gefahr</span>
+            <p><button class="btn btn-gefahr">Konto löschen</button></p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 12px 24px;
+font-weight: 600;
+border-radius: 8px;
+background-color: hsla(355, 75%, 45%, 1);
+color: white;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Deaktiviert</span>
+            <p>
+              <button class="btn btn-primaer" disabled>Nicht verfügbar</button>
+            </p>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>opacity: 0.5;
+cursor: not-allowed;</code></pre>
+        </div>
+
+        <h3 class="subsection-title" id="formulare">Formularfelder</h3>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Textfeld</span>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input class="input" id="name" type="text" placeholder="Max Mustermann" />
+            </div>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 10px 12px;
+font-size: 1rem;
+border: 2px solid rgba(27, 31, 59, 0.15);
+border-radius: 8px;
+
+/* bei Fokus */
+border-color: #FF6B5B;
+box-shadow: 0 0 0 3px rgba(255, 107, 91, 0.25);</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Textfeld mit Fehler</span>
+            <div class="form-field">
+              <label for="email">E-Mail</label>
+              <input class="input input-fehler" id="email" type="email" value="max@" aria-describedby="email-fehler" aria-invalid="true" />
+              <span class="feld-fehler" id="email-fehler">Bitte gib eine gültige E-Mail-Adresse ein.</span>
+            </div>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>border-color: hsla(355, 75%, 45%, 1);
+
+/* Fehlertext */
+font-size: 0.875rem;
+color: hsla(355, 75%, 45%, 1);</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Auswahl &amp; Textbereich</span>
+            <div class="form-field">
+              <label for="thema">Thema</label>
+              <select class="input" id="thema">
+                <option>Allgemeine Frage</option>
+                <option>Feedback</option>
+                <option>Fehler melden</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="nachricht">Nachricht</label>
+              <textarea class="input" id="nachricht" rows="3" placeholder="Deine Nachricht …"></textarea>
+            </div>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>/* gleiche Regeln wie das Textfeld */
+width: 100%;
+font-family: 'Source Sans 3', sans-serif;
+resize: vertical;</code></pre>
+        </div>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <span class="style-label">Checkbox</span>
+            <label class="checkbox">
+              <input type="checkbox" checked />
+              Newsletter abonnieren
+            </label>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>width: 18px;
+height: 18px;
+accent-color: #FF6B5B;</code></pre>
+        </div>
+
+        <h3 class="subsection-title" id="hinweise">Hinweisboxen</h3>
+
+        <div class="demo-card">
+          <div class="demo-preview alert-stack">
+            <div class="alert alert-erfolg" role="status">
+              <strong>Gespeichert.</strong> Deine Änderungen wurden übernommen.
+            </div>
+            <div class="alert alert-warnung" role="status">
+              <strong>Achtung.</strong> Dein Passwort läuft in 3 Tagen ab.
+            </div>
+            <div class="alert alert-fehler" role="alert">
+              <strong>Fehler.</strong> Die Datei konnte nicht hochgeladen werden.
+            </div>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 16px;
+border-left: 4px solid;
+border-radius: 8px;
+
+/* Erfolg */
+border-color: rgb(127, 200, 184);
+background-color: rgba(127, 200, 184, 0.2);
+
+/* Warnung */
+border-color: hsl(42, 100%, 62%);
+background-color: hsla(42, 100%, 62%, 0.2);
+
+/* Fehler */
+border-color: hsla(355, 75%, 45%, 1);
+background-color: hsla(355, 75%, 45%, 0.1);</code></pre>
+        </div>
+
+        <h3 class="subsection-title" id="badges">Badges</h3>
+
+        <div class="demo-card">
+          <div class="demo-preview badge-row">
+            <span class="badge badge-neu">Neu</span>
+            <span class="badge badge-erfolg">Aktiv</span>
+            <span class="badge badge-hinweis">Beta</span>
+            <span class="badge badge-neutral">Archiv</span>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>padding: 2px 10px;
+font-size: 0.75rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+border-radius: 999px;</code></pre>
+        </div>
+
+        <h3 class="subsection-title" id="karten">Karte</h3>
+
+        <div class="demo-card">
+          <div class="demo-preview">
+            <article class="karte">
+              <div class="karte-bild"></div>
+              <div class="karte-inhalt">
+                <span class="badge badge-neu">Neu</span>
+                <h4 class="karte-titel">Workshop: Farbe im Web</h4>
+                <p>
+                  Lerne in zwei Stunden, wie du eine stimmige Farbpalette für
+                  deine Website findest.
+                </p>
+                <a class="btn btn-primaer" href="#karten">Anmelden</a>
+              </div>
+            </article>
+          </div>
+          <pre
+            class="demo-rules"
+          ><code>max-width: 320px;
+overflow: hidden;
+border-radius: 16px;
+background-color: white;
+box-shadow: 0 2px 8px rgba(27, 31, 59, 0.15);
+
+/* Inhalt */
+padding: 24px;</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Design System · Stand 2026</p>
+    </footer>
+  </body>
+</html>
